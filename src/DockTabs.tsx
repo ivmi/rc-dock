@@ -331,6 +331,7 @@ export class DockTabs extends React.PureComponent<Props> {
             activeKey={activeId}
             onChange={this.onTabChange}
             popupClassName={classNames(groupClassNames(group))}
+            destroyInactiveTabPane={true}
       >
         {children}
       </Tabs>
